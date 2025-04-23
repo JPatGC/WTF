@@ -1,0 +1,1276 @@
+/* leaned CSS file and add map  
+ */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #2e7d32;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;/* leaned CSS file and add map  
+ */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #2e7d32;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0;
+  font-style: italic;
+}
+
+/* navigation */
+.main-nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav li {
+  margin: 0 15px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-nav a.active {
+  background-color: #1b5e20;
+}
+
+/* clickable breadcrumbs */
+.breadcrumb {
+  padding: 15px 20px;
+  background-color: #e9e9e9;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* introduction Section */
+.intro {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #2e7d32;
+  font-size: 1.8rem;
+}
+
+/* parks container */
+.parks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* park cards */
+.park-card {
+  background: white;
+  width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.park-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.park-image {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  background-image: linear-gradient(45deg, #f1f1f1, #e0e0e0);
+}
+
+.park-info {
+  padding: 20px;
+}
+
+.park-info h3 {
+  color: #2e7d32;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.location {
+  color: #666;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.park-link {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.park-link:hover {
+  background-color: #1b5e20;
+}
+
+/* park details */
+.park-detail {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.park-title {
+  color: #2e7d32;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.park-feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.park-feature-image {
+  flex: 1 1 400px;
+  min-height: 300px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+}
+
+.park-feature-info {
+  flex: 1 1 300px;
+  padding: 25px;
+}
+
+.park-description,
+.park-features,
+.park-visit {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.park-description h3,
+.park-features h3,
+.park-visit h3 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.features-list {
+  columns: 2;
+  list-style-type: square;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.park-gallery {
+  margin-bottom: 30px;
+}
+
+.park-gallery h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  flex: 1 1 250px;   /* keeps the nice masonry layout */
+  height: 180px;     /* fixed gallery height */
+  width: 100%;       /* let the image fill its flex cell */
+  object-fit: cover; /* crop the photo instead of stretching */
+  border-radius: 8px;
+
+}
+
+.nearby-parks {
+  margin-bottom: 30px;
+}
+
+.nearby-parks h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.nearby-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nearby-park {
+  flex: 1 1 200px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.nearby-park:hover {
+  transform: translateY(-5px);
+}
+
+.nearby-image {
+  height: 120px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-home {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-home a {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.back-home a:hover {
+  background-color: #1b5e20;
+}
+
+/* map page */
+.map-content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.map-content h2 {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.map-placeholder {
+  background-color: #e0e0e0;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  border-radius: 5px;
+}
+
+.map-note {
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
+
+.parks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.list-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.list-item-number {
+  background-color: #2e7d32;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.list-item-details h4 {
+  margin: 0 0 5px 0;
+  color: #2e7d32;
+}
+
+.list-item-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.map-legend {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.map-legend h3 {
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.legend-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.legend-list li {
+  display: flex;
+  align-items: center;
+}
+
+.legend-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.legend-icon.water {
+  background-color: #4fc3f7;
+}
+
+.legend-icon.seating {
+  background-color: #ff9800;
+}
+
+.legend-icon.food {
+  background-color: #f44336;
+}
+
+.legend-icon.restroom {
+  background-color: #9c27b0;
+}
+
+.legend-icon.wheelchair {
+  background-color: #2196f3;
+}
+
+.legend-icon.shade {
+  background-color: #4caf50;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #4caf50;
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  background-color: #444;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.social-link:hover {
+  background-color: #4caf50;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #222;
+  margin-top: 20px;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .park-card {
+    width: 260px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 5px 0;
+  }
+
+  .park-feature {
+    flex-direction: column;
+  }
+
+  .features-list {
+    columns: 1;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .legend-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map-content {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .park-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .park-title {
+    font-size: 1.8rem;
+  }
+
+  .gallery-images {
+    flex-direction: column;
+  }
+
+  .gallery-image {
+    height: 200px;
+  }
+
+  .nearby-container {
+    flex-direction: column;
+  }
+
+  .legend-list {
+    grid-template-columns: 1fr;
+  }
+
+  .parks-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0;
+  font-style: italic;
+}
+
+/* navigation */
+.main-nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav li {
+  margin: 0 15px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-nav a.active {
+  background-color: #1b5e20;
+}
+
+/* clickable 'breadcrumbs' */
+.breadcrumb {
+  padding: 15px 20px;
+  background-color: #e9e9e9;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Introduction Section */
+.intro {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #2e7d32;
+  font-size: 1.8rem;
+}
+
+/* parks container */
+.parks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* park cards */
+.park-card {
+  background: white;
+  width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.park-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.park-image {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  background-image: linear-gradient(45deg, #f1f1f1, #e0e0e0);
+}
+
+.park-info {
+  padding: 20px;
+}
+
+.park-info h3 {
+  color: #2e7d32;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.location {
+  color: #666;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.park-link {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.park-link:hover {
+  background-color: #1b5e20;
+}
+
+/* park details */
+.park-detail {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.park-title {
+  color: #2e7d32;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.park-feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.park-feature-image {
+  flex: 1 1 400px;
+  min-height: 300px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+}
+
+.park-feature-info {
+  flex: 1 1 300px;
+  padding: 25px;
+}
+
+.park-description,
+.park-features,
+.park-visit {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.park-description h3,
+.park-features h3,
+.park-visit h3 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.features-list {
+  columns: 2;
+  list-style-type: square;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.park-gallery {
+  margin-bottom: 30px;
+}
+
+.park-gallery h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  flex: 1 1 250px;
+  height: 180px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #666;
+}
+
+.nearby-parks {
+  margin-bottom: 30px;
+}
+
+.nearby-parks h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.nearby-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nearby-park {
+  flex: 1 1 200px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.nearby-park:hover {
+  transform: translateY(-5px);
+}
+
+.nearby-image {
+  height: 120px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-home {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-home a {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.back-home a:hover {
+  background-color: #1b5e20;
+}
+
+/* Map Page */
+.map-content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.map-content h2 {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.map-placeholder {
+  background-color: #e0e0e0;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  border-radius: 5px;
+}
+
+.map-note {
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
+
+.parks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.list-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.list-item-number {
+  background-color: #2e7d32;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.list-item-details h4 {
+  margin: 0 0 5px 0;
+  color: #2e7d32;
+}
+
+.list-item-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.map-legend {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.map-legend h3 {
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.legend-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.legend-list li {
+  display: flex;
+  align-items: center;
+}
+
+.legend-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.legend-icon.water {
+  background-color: #4fc3f7;
+}
+
+.legend-icon.seating {
+  background-color: #ff9800;
+}
+
+.legend-icon.food {
+  background-color: #f44336;
+}
+
+.legend-icon.restroom {
+  background-color: #9c27b0;
+}
+
+.legend-icon.wheelchair {
+  background-color: #2196f3;
+}
+
+.legend-icon.shade {
+  background-color: #4caf50;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #4caf50;
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  background-color: #444;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.social-link:hover {
+  background-color: #4caf50;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #222;
+  margin-top: 20px;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .park-card {
+    width: 260px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 5px 0;
+  }
+
+  .park-feature {
+    flex-direction: column;
+  }
+
+  .features-list {
+    columns: 1;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .legend-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map-content {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .park-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .park-title {
+    font-size: 1.8rem;
+  }
+
+  .gallery-images {
+    flex-direction: column;
+  }
+
+  .gallery-image {
+    height: 200px;
+  }
+
+  .nearby-container {
+    flex-direction: column;
+  }
+
+  .legend-list {
+    grid-template-columns: 1fr;
+  }
+
+  .parks-list {
+    grid-template-columns: 1fr;
+  }
+  <!-- Google Maps JavaScript API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  
+  <!-- Custom JavaScript for the map -->
+  <script src="map.js"></script>
+}
+/* Leaflet Map Styles */
+#park-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.custom-map-marker {
+  background: transparent;
+  border: none;
+}
+
+.marker-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2e7d32;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.map-popup h3 {
+  margin: 0 0 5px 0;
+  color: #2e7d32;
+  font-size: 16px;
+}
+
+.map-popup p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}

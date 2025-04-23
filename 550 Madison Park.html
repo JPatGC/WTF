@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>550 Madison Park - Manhattan Pocket Parks</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+        crossorigin=""/>
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <style>
+    /* Additional map styles */
+    #park-map {
+      width: 100%;
+      height: 300px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .custom-map-marker {
+      background: transparent;
+      border: none;
+    }
+
+    .marker-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #2e7d32;
+      color: white;
+      font-weight: bold;
+      border: 2px solid white;
+      font-size: 14px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .map-popup h3 {
+      margin: 0 0 5px 0;
+      color: #2e7d32;
+      font-size: 16px;
+    }
+
+    .map-popup p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body class="park-page">
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Manhattan Pocket Parks</h1>
+      <p class="tagline">Discover Hidden Green Spaces in the Concrete Jungle</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html">Park Map</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt; 550 Madison Park
+  </div>
+  
+  <main class="park-detail">
+    <h2 class="park-title">550 Madison Park</h2>
+    
+    <!-- Add map container -->
+    <div id="park-map"></div>
+    
+    <div class="park-gallery">
+  <h3>Gallery</h3>
+  <div class="gallery-images">
+
+    <!-- Image 1 -->
+    <img src="images/fivefivemadison-1.png"
+        
+         class="gallery-image">
+
+    <!-- Image 2 -->
+    <img src="images/fivefivemadison-2.png"
+         alt="Overhead view of Park’s layout"
+         class="gallery-image">
+
+    <!-- Image 3 -->
+    <img src="images/fivefivemadison-3.png"
+        
+         class="gallery-image">
+
+  </div>
+</div>
+
+    
+    <div class="back-home">
+      <a href="index.html">← Back to All Parks</a>
+    </div>
+  </main>
+
+  <!-- current park name -->
+  <script>
+    window.currentParkName = "550 Madison Park";
+  </script>
+  
+  <!-- Include map script -->
+  <script src="map.js"></script>
+</body>
+</html>

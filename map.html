@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Park Map - Manhattan Pocket Parks</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+          crossorigin=""/>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <style>
+      /* Additional map styles */
+      #park-map {
+        width: 100%;
+        height: 500px;
+        border-radius: 5px;
+      }
+
+      .custom-map-marker {
+        background: transparent;
+        border: none;
+      }
+
+      .marker-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #2e7d32;
+        color: white;
+        font-weight: bold;
+        border: 2px solid white;
+        font-size: 14px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .map-popup h3 {
+        margin: 0 0 5px 0;
+        color: #2e7d32;
+        font-size: 16px;
+      }
+
+      .map-popup p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body class="map-page">
+    <header class="site-header">
+      <div class="header-content">
+        <h1>Manhattan Pocket Parks</h1>
+        <p class="tagline">
+          Discover Hidden Green Spaces in the Concrete Jungle
+        </p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html" class="active">Park Map</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="breadcrumb"><a href="index.html">Home</a> &gt; Park Map</div>
+
+    <main class="map-content">
+      <h2>Manhattan Pocket Parks Map</h2>
+
+      <div class="map-container">
+        <div id="park-map"></div>
+        <p class="map-note">Click on a marker to see park details.</p>
+      </div>
+
+      <h3>All Pocket Parks</h3>
+      <div class="parks-list">
+        <div class="list-item" data-park="Paley Park">
+          <div class="list-item-number">1</div>
+          <div class="list-item-details">
+            <h4>Paley Park</h4>
+            <p>53rd Street between Madison & Fifth</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="Greenacre Park">
+          <div class="list-item-number">2</div>
+          <div class="list-item-details">
+            <h4>Greenacre Park</h4>
+            <p>East 51st Street between 2nd & 3rd</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="McGraw-Hill Pocket Park">
+          <div class="list-item-number">3</div>
+          <div class="list-item-details">
+            <h4>McGraw-Hill Pocket Park</h4>
+            <p>West 48th Street & 6th Avenue</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="Tudor City Greens">
+          <div class="list-item-number">4</div>
+          <div class="list-item-details">
+            <h4>Tudor City Greens</h4>
+            <p>East 42nd Street & 1st Avenue</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="50th Street Commons">
+          <div class="list-item-number">5</div>
+          <div class="list-item-details">
+            <h4>50th Street Commons</h4>
+            <p>West 50th Street near 8th Avenue</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="550 Madison Park">
+          <div class="list-item-number">6</div>
+          <div class="list-item-details">
+            <h4>550 Madison Park</h4>
+            <p>East 55th Street & Madison Avenue</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="Septuagesimo Uno">
+          <div class="list-item-number">7</div>
+          <div class="list-item-details">
+            <h4>Septuagesimo Uno</h4>
+            <p>West 71st Street between Broadway & West End</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="Amster Yard">
+          <div class="list-item-number">8</div>
+          <div class="list-item-details">
+            <h4>Amster Yard</h4>
+            <p>East 49th Street between 2nd & 3rd</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="Berlin Wall Remnant Park">
+          <div class="list-item-number">9</div>
+          <div class="list-item-details">
+            <h4>Berlin Wall Remnant Park</h4>
+            <p>520 Madison Avenue</p>
+          </div>
+        </div>
+
+        <div class="list-item" data-park="Labyrinth of Contemplation">
+          <div class="list-item-number">10</div>
+          <div class="list-item-details">
+            <h4>Labyrinth of Contemplation</h4>
+            <p>Battery Park City</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Custom JavaScript for the map -->
+    <script src="map.js"></script>
+  </body>
+</html>

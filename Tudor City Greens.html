@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tudor City Greens - Manhattan Pocket Parks</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <!-- Leaflet JavaScript -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body class="park-page">
+    <header class="site-header">
+      <div class="header-content">
+        <h1>Manhattan Pocket Parks</h1>
+        <p class="tagline">
+          Discover Hidden Pockets of Green in the Concrete Jungle
+        </p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Park Map</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="breadcrumb"><a href="index.html">Home</a> &gt; Paley Park</div>
+
+    <main class="park-detail">
+      <h2 class="park-title">Tudor City Greens</h2>
+
+      <div class="park-feature">
+        <div class="park-feature-image">Park Feature Image</div>
+        <div class="park-feature-info">
+          <p class="location">
+            <strong>Location:</strong> 53rd Street between Madison & Fifth
+            Avenues
+        
+          <!-- Map link -->
+          <div class="location-map-link">
+            <a href="#park-location-map">View on Map ↓</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="park-gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-images">
+          <!-- Image 1 -->
+          <img
+            src="images/tudor-1.png"
+           
+            class="gallery-image"
+          />
+
+          <!-- Image 2 -->
+          <img
+            src="images/tudor-2.png"
+        
+            class="gallery-image"
+          />
+
+          <!-- Image 3 -->
+          <img
+            src="images/tudor-3.png"
+            alt="Visitors relaxing under umbrellas"
+            class="gallery-image"
+          />
+        </div>
+      </div>
+
+      <div class="back-home">
+        <a href="index.html">← Back to All Parks</a>
+      </div>
+    </main>
+
+    <script>
+      // current park name for the map
+      window.currentParkName = "Paley Park";
+    </script>
+
+    <!-- JavaScript for the map -->
+    <script src="map.js"></script>
+  </body>
+</html>
