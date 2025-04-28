@@ -16,7 +16,7 @@ body {
     url("images/header-bg.jpg");
   background-size: cover;
   background-position: center;
-  color: white;/* leaned CSS file and add map  
+  color: white;/* cleaned CSS file and add map  
  */
 
 body {
@@ -103,7 +103,7 @@ body {
   text-decoration: underline;
 }
 
-/* introduction Section */
+/* introduction section */
 .intro {
   max-width: 800px;
   margin: 40px auto;
@@ -271,7 +271,7 @@ body {
 }
 
 .gallery-image {
-  flex: 1 1 250px;   /* keeps the nice masonry layout */
+  flex: 1 1 250px;   /* keeps the masonry layout */
   height: 180px;     /* fixed gallery height */
   width: 100%;       /* let the image fill its flex cell */
   object-fit: cover; /* crop the photo instead of stretching */

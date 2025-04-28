@@ -1,13 +1,13 @@
-// Manhattan Pocket Parks - Interactive Map
+// nteractive Map
 document.addEventListener('DOMContentLoaded', function() {
   // Check if we're on a page with the map element
   const mapContainer = document.getElementById('park-map');
   if (!mapContainer) return;
 
-  // Initialize the map centered on Manhattan
+  // initialize the map centered on Manhattan
   const map = L.map('park-map').setView([40.7580, -73.9855], 13);
 
-  // Add OpenStreetMap tiles
+  // add OpenStreetMap tiles
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // custom icon for park markers
   const parkIcon = L.icon({
-    iconUrl: 'images/park-marker.png', // You'll need to create this icon
+    iconUrl: 'images/park-marker.png', 
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32]
@@ -103,13 +103,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     marker.bindPopup(popupContent);
     
-    // If we're on a single park page and this is that park, open its popup
+    // open its popup if on map page
     if (window.currentParkName && window.currentParkName === park.name) {
       marker.openPopup();
     }
   });
 
-  // Add park highlighting when hovering over list items
+
   const parkListItems = document.querySelectorAll('.list-item');
   if (parkListItems.length > 0) {
     parkListItems.forEach((item, index) => {
